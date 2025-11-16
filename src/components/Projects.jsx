@@ -9,7 +9,7 @@ function Projects() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("https://raw.githubusercontent.com/rawan809/portfolio/blob/main/public/data.json")
+    fetch(import.meta.env.BASE_URL + "data.json")
       .then((res) => res.json())
       .then((json) => setData(json))
       .catch((err) => console.error("Failed to load JSON:", err));

@@ -3,13 +3,13 @@ import Header from "./Header";
 import { CiMail } from "react-icons/ci";
 import { IoLocationOutline } from "react-icons/io5";
 import { CiPhone } from "react-icons/ci";
-import { useEffect, useState } from "react"; // استيراد useEffect و useState
+import { useEffect, useState } from "react";
 
 function Contact() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("https://raw.githubusercontent.com/rawan809/portfolio/blob/main/public/data.json")
+    fetch(import.meta.env.BASE_URL + "data.json")
       .then((res) => res.json())
       .then((json) => setData(json))
       .catch((err) => console.error("Failed to load JSON:", err));
