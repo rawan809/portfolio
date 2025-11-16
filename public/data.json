@@ -35,14 +35,14 @@
 
   "projects": [
     {
-      "image": "/public/image.png",
+      "image": "image.png",
       "title": "E-Commerce App",
       "githubRepo": "https://github.com/username/ecommerce-app",
       "description": "Cross-platform mobile shopping application with cart, wishlist and payments.",
       "technologies": ["Flutter", "Dart", "Firebase", "Provider"]
     },
     {
-      "image": "/public/image.png",
+      "image": "image.png",
       "title": "Task Management App",
       "githubRepo": "https://github.com/username/task-manager",
       "description": "Productivity app for task planning, reminders and team collaboration.",

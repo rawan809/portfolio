@@ -30,7 +30,7 @@ function Projects() {
               className="rounded-2xl overflow-hidden border border-gray-500"
             >
               <div className="relative group">
-                <img className="" src={project.image} alt={project.title} /> 
+                <img className="" src={import.meta.env.BASE_URL + project.image} alt={project.title} /> 
                 <div className="absolute w-full h-full bg-black top-0 group-hover:opacity-70 opacity-0 transition-all duration-300"></div>
                 <a
                   href={project.githubRepo}
